@@ -13,6 +13,8 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
           cache: maven
+      - name: Build with Maven Wrapper
+        run: ./mvnw -B package
       - name: Deploy to Heroku
         uses: AkhileshNS/heroku-deploy@v3.8.8
         with:
