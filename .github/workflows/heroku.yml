@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - uses: actions/checkout@v2
@@ -13,10 +13,5 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           cache: maven
-      - name: Deploy to Heroku
-        uses: AkhileshNS/heroku-deploy@v3.8.8
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          heroku_app_name: ${{secrets.HEROKU_APP}}
-          branch: main
+      - name: Build with Maven Wrapper
+        run: ./mvnw spring-boot:run
