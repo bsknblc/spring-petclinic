@@ -1,5 +1,3 @@
-package org.springframework.samples.petclinic.test;
-
 import org.springframework.samples.petclinic.ImpactAnalyzer.connect.Connect;
 import org.springframework.samples.petclinic.ImpactAnalyzer.models.HTMLElement;
 import org.springframework.samples.petclinic.ImpactAnalyzer.models.TestElement;
