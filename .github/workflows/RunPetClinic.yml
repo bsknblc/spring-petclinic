@@ -1,3 +1,4 @@
+name: Web App
 on: [push]
 
 jobs:
