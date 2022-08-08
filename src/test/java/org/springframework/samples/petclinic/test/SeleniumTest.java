@@ -33,9 +33,10 @@ public class SeleniumTest {
 
 
 	@Before
-	public final void before() {
+	public final void before() throws InterruptedException {
 
 		pageSourceList = new ArrayList<PageSource>();
+		Thread.sleep(30000);
 
 	}
 
