@@ -17,8 +17,8 @@ jobs:
       - name: Clean Install
         run: mvn clean install -DskipTests
       - name: Run Test
-        run: mvn -Dtest=SeleniumTest test
+        run: mvn -Dtest=UserMultiplePages test
       - name: Run Test
-        run: mvn -Dtest=AdiFeriha test
+        run: mvn -Dtest=FindOwner test
       - name: Run ImpactAnalyzer
         run: mvn test -Dtest=ImpactAnalyzerTest#Test
