@@ -19,7 +19,6 @@ import org.springframework.samples.petclinic.ImpactAnalyzer.models.PageSource;
 
 import static org.junit.Assert.fail;
 
-// Initial state of the web project
 
 public class SeleniumTest {
 
