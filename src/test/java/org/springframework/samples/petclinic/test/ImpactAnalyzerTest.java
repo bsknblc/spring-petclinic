@@ -17,6 +17,8 @@ import org.springframework.samples.petclinic.ImpactAnalyzer.models.TestElement;
 import org.springframework.samples.petclinic.ImpactAnalyzer.models.TestFileParser;
 import org.springframework.samples.petclinic.test.DependencyAnalyzer;
 
+
+
 public class ImpactAnalyzerTest {
 
 	@org.junit.Test
